@@ -1,44 +1,42 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
+# Se Poupe
 
-# NomedoProjeto
 
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 4<br>
+**Conteúdo da Disciplina**: Dividir e Conquistar<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 17/0102343  |  Eduardo Vieira Lima |
+| 17/0114040  |  Gabriel Davi Silva Pereira |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Se Poupe é uma aplicação mobile para organização de finanças, visando economia
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: Javascript<br>
+**Framework**: React Native<br>
+## Pré-requisitos (Execução local)
+    - Expo Cli
+    - Smartphone Android ou emulador Android
+    - Possuir o app Expo no smartphone
+    - Yarn ou NPM
+
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+#### Para executar o app:
+    - Navegue para a pasta app/
+    - Executar yarn install
+    - Executar expo start
+
+O comando irá gerar um QRCode para ser lido pelo app do Expo em seu celular, basta escaneá-lo para finalizar a execução
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Para a ordenação dos itens o app utiliza uma implementação de Dividir e Conquistar no template de MergeSort.
 
 
 
