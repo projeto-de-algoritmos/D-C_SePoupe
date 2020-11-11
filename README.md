@@ -43,10 +43,6 @@ Se Poupe é uma aplicação mobile para organização de finanças, visando econ
     - Entrar no app do expo em seu celular
     - Ler qrcode que será mostrado no terminal após expo start
 
-    Ou
-
-    - Baixe o apk disponível no arquivo SePoupe.apk na raiz do projeto e instale em seu celular.
-
 ## Outros
 
 Para a ordenação dos itens o app utiliza uma implementação de Dividir e Conquistar no template de MergeSort.
