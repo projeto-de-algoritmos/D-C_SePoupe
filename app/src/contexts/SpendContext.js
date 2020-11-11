@@ -1,6 +1,7 @@
 import React, { createContext, useReducer, useEffect, useState } from "react";
 import { spendReducer } from "../reducers/SpendReducer";
 import ProductStorageService from "../services/AsyncStorage/Products";
+import DefaultProducts from "../utils/products";
 
 export const SpendContext = createContext();
 
@@ -11,10 +12,10 @@ export default function SpendContextProvider({ children }) {
 
   async function fetchProducts() {
     const productsFromStorage = await ProductStorageService.getProducts();
-    if (productsFromStorage) {
+    if (productsFromStorage.length) {
       dispatch({ products: productsFromStorage });
     } else {
-      dispatch({ products: [] });
+      dispatch({ products: DefaultProducts });
     }
   }
 
@@ -47,7 +48,7 @@ export default function SpendContextProvider({ children }) {
     },
     async filterProducts(price, category, date) {
       const filterRules = { price, category, date };
-      const productsToFilter = await ProductStorageService.getProducts();
+      const productsToFilter = products;
       const productsFilterd = ProductStorageService.filter(
         productsToFilter,
         filterRules

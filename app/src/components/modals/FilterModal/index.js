@@ -77,7 +77,7 @@ export default function({ visible, setVisible }) {
             <Picker
               label="Preço"
               items={["Crescente", "Decrescente"]}
-              onChange={(category) => setFilterByCategory(category)}
+              onChange={(price) => setFilterByPrice(price)}
             />
             <Picker
               label="Categoria"
