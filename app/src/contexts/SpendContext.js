@@ -13,7 +13,7 @@ export default function SpendContextProvider({ children }) {
   async function fetchProducts() {
     const productsFromStorage = await ProductStorageService.getProducts();
     if (productsFromStorage?.length) {
-      dispatch({ products: productsFromStorage });
+      dispatch({ products: [...productsFromStorage, ...DefaultProducts] });
     } else {
       dispatch({ products: DefaultProducts });
     }
